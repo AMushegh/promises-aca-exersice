@@ -1,5 +1,7 @@
-const getUsers = () => {
-    console.log("loading")
-   return usersPromise.then((data) => console.log(data))
-};
+const getUsers = async () => {
+    console.log("loading");
+    const res = await usersRequest();
+    const data = await console.log(res); 
+    console.log(data);
+  };
 
