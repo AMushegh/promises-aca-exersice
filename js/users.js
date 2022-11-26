@@ -1,13 +1,9 @@
-const getUsers = (users) => {
-   console.log("Loading...");
-   const userList = JSON.parse(users);
-   console.log(userlist);
-   console.log('Users are loaded');
-};
-
-async function foo() {
-    let result = await usersPromise();
-    return result;
-}
-
-getUsers(foo());
+const getUsers2 = () => {
+    console.log("Loading...");
+    async function foo() {
+        const result = await usersRequest();
+        console.log(result);
+    }
+ };
+ 
+ getUsers2();
