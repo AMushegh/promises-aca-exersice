@@ -3,5 +3,5 @@ const getUsers = async () => {
   usersRequest().then(dataHandler).finally(console.log("Users are loaded"));
   };
   function dataHandler(data) {
-    console.log(data);f
+    console.log(data);
   }
