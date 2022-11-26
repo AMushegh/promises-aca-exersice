@@ -132,9 +132,12 @@ let usersDataJSON = `[
 ]`;
 
 const usersPromise = new Promise((resolve, reject) => {
-    // your code goes here
+    const radomDuration  =Math.floor((Math.random() * 10000) + 1000)
+    setTimeout(() => {
+        resolve(JSON.parse(usersDataJSON));
+    }, radomDuration)
 });
 
 const usersRequest = () => {
-    return usersPromise;
+    return usersPromise
 };

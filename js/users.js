@@ -1,3 +1,4 @@
 const getUsers = () => {
-    // your code goes here
+    console.log("Loading....")
+ usersRequest().then(a => {console.log(a)})
 };
