@@ -137,5 +137,5 @@ const usersPromise = new Promise((resolve, reject) => {
 });
 
 const usersRequest = () => {
-    return usersPromise;f
+    return usersPromise;
 };
