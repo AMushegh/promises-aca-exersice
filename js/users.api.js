@@ -132,9 +132,8 @@ let usersDataJSON = `[
 ]`;
 
 const usersPromise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve(usersDataJSON)
-    }, Math.floor(Math.random() * 10000) + 1)
+   const randomDuration = Math.floor(Math.random() * 10000) + 1000;
+   setTimeout(() => {}, randomDuration)
 });
 
 const usersRequest = () => {

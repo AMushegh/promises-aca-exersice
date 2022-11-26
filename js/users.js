@@ -1,10 +1,12 @@
 const getUsers = async () => {
     console.log("Loading...");
   
-    const response = await usersRequest();
-    const data = await JSON.parse(response);
+    usersRequest().then(dataHandler).finally(console.log("Users are loaded"))
   
-    console.log(data);
+    
   
     console.log("users are loaded");
   };
+  function dataHandler(data) {
+    console.log(data);
+  }
