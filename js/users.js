@@ -8,5 +8,5 @@ const getUsers = async () => {
     console.log("users are loaded");
   };
   function dataHandler(data) {
-    console.log(data);
+    console.log(data);f
   }
