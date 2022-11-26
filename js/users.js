@@ -1,3 +1,5 @@
 const getUsers = () => {
-    // your code goes here
+   
 };
+
+console.log(getUsers())

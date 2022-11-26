@@ -1,4 +1,4 @@
-let usersDataJSON = `[
+let usersDataJSON = [
     {
         "id": 1,
         "firstName": "Terry",
@@ -129,12 +129,24 @@ let usersDataJSON = `[
         "password": "i0xzpX",
         "birthDate": "1958-08-11"
     }
-]`;
+];
 
 const usersPromise = new Promise((resolve, reject) => {
-    // your code goes here
+    for(let item of usersDataJSON){
+        if(item.age >= 18){
+        resolve("user is adult")
+    }else{
+        reject("user is minor")
+    }
+    }    
 });
 
 const usersRequest = () => {
-    return usersPromise;
+    return usersPromise.then((res) => {
+        console.log(res)
+    }).catch((err) => {
+        console.log(err)
+    });
 };
+
+console.log(usersRequest())
