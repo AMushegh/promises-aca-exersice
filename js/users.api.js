@@ -132,7 +132,7 @@ let usersDataJSON = `[
 ]`;
 
 const usersPromise = new Promise((resolve, reject) => {
-    resolve(usersDataJSON)
+    resolve(JSON.parse(usersDataJSON))
 });
 
 const usersRequest = () => {

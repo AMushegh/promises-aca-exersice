@@ -1,5 +1,5 @@
 function main() {
-    getUsers();
+    getUsers2();
 }
 
 main();
