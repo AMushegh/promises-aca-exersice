@@ -1,10 +1,4 @@
-const getUsers = async () => {
-  console.log("Loading...");
-
-  const response = await usersRequest();
-  const data = await JSON.parse(response);
-
-  console.log(data);
-
-  console.log("users are loaded");
+const getUsers = () => {
+  console.log("Loading....")
+  usersRequest().then(a => { console.log(a) })
 };

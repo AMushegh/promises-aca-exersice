@@ -2,4 +2,4 @@ function main() {
     getUsers();
 }
 
-main();
+main(obj);
